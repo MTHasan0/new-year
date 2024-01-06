@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: white;
     /* font-family: 'Work Sans', sans-serif; */
@@ -12,16 +17,19 @@ body {
 .banner {
     background-image: url('/images/banner/banner1.png');
     background-repeat: no-repeat;
+    background-size: cover;
     width: 1600px;
     height: 808px;
-    margin: -9px 0px 0px -9px;
+
+    /* margin: -9px 0px 0px -9px; */
 
 }
 
 .banner-container {
     text-align: right;
-    margin-left: 845px;
+    margin-left: 745px;
     margin-top: -52px;
+
 
 
 
@@ -36,7 +44,7 @@ body {
     font-size: 65px;
     font-weight: 700;
     margin-bottom: 0px;
-    /* margin-left: 845px; */
+
 
 
 }
@@ -57,8 +65,9 @@ body {
 
 }
 
-.banner-container>a>button {
-    margin-right: 230px;
+.banner-container>a,
+button {
+    /* margin-right: 230px; */
     width: 160px;
     height: 64px;
     background: #F15B22;
@@ -67,6 +76,10 @@ body {
     font-size: 20px;
     font-weight: 600;
     border: none;
+    margin-left: 364px;
+    text-decoration: none;
+    position: relative;
+
 }
 
 
@@ -120,25 +133,58 @@ ul li:before {
     color: #009959;
 }
 
-.plan-container {
-    display: flex;
-    margin-top: 183px;
+
+
+.icon {
+    width: 92.958px;
+    height: 92.958px;
+    /* margin-top: 130px; */
 }
 
-.plan-icon {
-    width: 93px;
-    height: 93px;
+.icon-header {
+    color: #151414;
+    text-align: center;
+    font-family: sans-serif Work Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
 }
+
+.icon-description {
+    color: #737272;
+    text-align: center;
+    font-family: sans-serif Work Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 130px;
+    /* margin-right: 130px; */
+    margin-top: 130px;
+    gap: 150px;
+
+
+}
+
 
 
 .watch-section {
     width: 1140px;
     height: 300px;
     border-radius: 8px;
-    background-image: linear-gradient(90deg, #d84c15 0%, rgba(241, 91, 34, 0.00) 100%), url('../images/watch.png');
+    background-image: linear-gradient(90deg, #d84c15 0%, rgba(241, 91, 34, 0.00)), url('../images/watch.png');
     background-repeat: no-repeat;
-    margin-left: 230px;
+    margin: auto;
     margin-top: 130px;
+
 }
 
 .watch-title {
@@ -152,6 +198,7 @@ ul li:before {
     margin-left: 64px;
     padding-top: 8px;
 
+
 }
 
 
@@ -159,7 +206,6 @@ ul li:before {
     width: 160px;
     height: 64px;
     background: white;
-    text-align: center;
     border: 0px;
     color: #F15B22;
     font-family: sans-serif Work Sans;
@@ -168,6 +214,7 @@ ul li:before {
     font-weight: 600;
     line-height: normal;
     border-radius: 10px;
+    margin-left: 64px;
 }
 
 
@@ -177,9 +224,9 @@ ul li:before {
 }
 
 .footer-section {
+    margin-top: 130px;
     width: 1600px;
     height: 577px;
-    margin-left: -9px;
     background-color: #151414;
 
 
@@ -192,22 +239,45 @@ ul li:before {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+}
+
+.future-section {
+    margin-left: 100px;
+    margin-top: 130px;
 }
 
 
-.subscribe-section,
-input,
-button {
-    display: block;
-}
 
-.future-description, p {
+.future-description,
+p {
     width: 485px;
     color: #FFF;
-    font-family:sans-serif Work Sans;
+    font-family: sans-serif Work Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
+    margin-top: 24px;
     /* 162.5% */
+}
+
+.footer-icon {
+    display: flex;
+    gap: 20px;
+}
+
+.subscribe-section {
+    
+    margin-top: 130px;
+
+}
+
+.subscribe-title {
+    color: #FFF;
+    font-family:sans-serif Work Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
 }
